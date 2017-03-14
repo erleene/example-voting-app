@@ -68,7 +68,7 @@ services:
         max_attempts: 3
         window: 120s
       placement:
-        constraints: [node.role == manager]
+        constraints: [node.role == worker]
 
   visualizer:
     image: dockersamples/visualizer:stable
